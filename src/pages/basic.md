@@ -1,5 +1,5 @@
 ---
-layout: ../layout/BasicPage.astro
+layout: ../layouts/BasicPage.astro
 title: BasicPage
 ---
 
