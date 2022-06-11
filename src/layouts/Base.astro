@@ -18,7 +18,7 @@ const { title } = Astro.props;
     </head>
 
     <body>
-        <header class="site-header">
+        <header class="site-header wrapper">
             <nav>
                 <ul>
                     <li><a href="/">Main Page</a></li>
@@ -29,6 +29,8 @@ const { title } = Astro.props;
             </nav>
         </header>
 
-        <slot>Contenido default por si se me olvida poner algo</slot>
+        <main class="wrapper">
+            <slot>Contenido default por si se me olvida poner algo</slot>
+        </main>
     </body>
 </html>
