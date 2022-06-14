@@ -3,7 +3,7 @@ const { title, description, imageURL } = Astro.props;
 
 const siteName = "Astro Demo";
 
-const pageTitle = title === siteName ? title : `{title} | {siteName}`;
+const pageTitle = title === siteName ? title : `${title} | ${siteName}`;
 
 const defaultDescription = "This is a demo site for Astro";
 const pageDescription = description || defaultDescription;
