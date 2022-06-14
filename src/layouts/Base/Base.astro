@@ -1,22 +1,15 @@
 ---
-import "../css/styles.css";
+import "../../css/styles.css";
+import Head from "./Head.astro";
 
-const { title } = Astro.props;
+const props = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>{title}</title>
-        <style is:global>
-            p {
-                max-width: 35em;
-            }
-        </style>
+        <Head {...props} />
     </head>
-
     <body>
         <header class="site-header wrapper">
             <nav>
@@ -25,6 +18,7 @@ const { title } = Astro.props;
                     <li><a href="/about">Sobre Nosotros</a></li>
                     <li><a href="/contact">Contacto</a></li>
                     <li><a href="/basic">Basic</a></li>
+                    <li><a href="/blog">Blog</a></li>
                 </ul>
             </nav>
         </header>

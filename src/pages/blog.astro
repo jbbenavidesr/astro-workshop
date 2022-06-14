@@ -1,0 +1,20 @@
+---
+import Card from "../components/Card.astro";
+import Base from "../layouts/Base/Base.astro";
+
+const posts = await Astro.glob("./blog/*.md");
+---
+
+<Base title="Blog">
+    <p>Hello, welcome to my blog!</p>
+    {posts.map((post) => (
+        <Card>
+            <article>
+                <h2>{post.frontmatter.title}</h2>
+                <p>{post.frontmatter.description}</p>
+                <a href={post.url}>Read more...</a>
+
+            </article>
+        </Card>
+    ))}
+</Base>
