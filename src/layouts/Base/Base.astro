@@ -1,6 +1,7 @@
 ---
 import "../../css/styles.css";
 import Head from "./Head.astro";
+import Nav from "../../components/Nav.astro";
 
 const props = Astro.props;
 ---
@@ -12,15 +13,7 @@ const props = Astro.props;
     </head>
     <body>
         <header class="site-header wrapper">
-            <nav>
-                <ul>
-                    <li><a href="/">Main Page</a></li>
-                    <li><a href="/about">Sobre Nosotros</a></li>
-                    <li><a href="/contact">Contacto</a></li>
-                    <li><a href="/basic">Basic</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                </ul>
-            </nav>
+            <Nav />
         </header>
 
         <main class="wrapper">

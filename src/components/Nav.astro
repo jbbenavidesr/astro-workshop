@@ -1,0 +1,34 @@
+---
+const pagePath = Astro.canonicalURL.pathname;
+
+const navItems = [
+    { contents: "Main Page", href: "/", isActive: false },
+    { contents: "Sobre Nosotros", href: "/about/", isActive: false },
+    { contents: "Contacto", href: "/contact/", isActive: false },
+    { contents: "Basic", href: "/basic/", isActive: false },
+    { contents: "Blog", href: "/blog/", isActive: false },
+];
+
+navItems.forEach(item => {
+    if (
+        (item.href === '/' && pagePath === item.href) || 
+        (item.href !== '/' && pagePath.startsWith(item.href))
+    ) {
+        item.isActive = true;
+    }
+});
+---
+
+<nav>
+    <ul>
+        {navItems.map(item =>(
+            <li class={item.isActive ? 'active' : ''}><a href={item.href}>{item.contents}</a></li>
+        ))}
+    </ul>
+</nav>
+
+<style>
+    .active {
+        outline: dashed #ccc 1px;
+    }
+</style>
