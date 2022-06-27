@@ -1,20 +1,30 @@
 ---
+import { formatDate } from "../helpers/date.helpers";
+
+// Components
 import Card from "../components/Card.astro";
 import Base from "../layouts/Base/Base.astro";
 
 const posts = await Astro.glob("./blog/*.md");
+const sortedPosts = posts.sort((a, b) => (
+    new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()
+));
+
 ---
 
 <Base title="Blog">
-    <p>Hello, welcome to my blog!</p>
-    {posts.map((post) => (
-        <Card>
-            <article>
-                <h2>{post.frontmatter.title}</h2>
-                <p>{post.frontmatter.description}</p>
-                <a href={post.url}>Read more...</a>
+<p>Hello, welcome to my blog!</p>
+{sortedPosts.map((post) => (
+<Card>
+    <article>
+        <h2>{post.frontmatter.title}</h2>
+        <time datetime={post.frontmatter.date}>
+            {formatDate(post.frontmatter.date, {locale: 'de'})}
+        </time>
+        <p>{post.frontmatter.description}</p>
+        <a href={post.url}>Read more...</a>
 
-            </article>
-        </Card>
-    ))}
+    </article>
+</Card>
+))}
 </Base>

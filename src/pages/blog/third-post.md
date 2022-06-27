@@ -1,11 +1,11 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: "Second post"
-description: This is the second blog post
-date: 2022-06-17
+title: "Third post"
+description: This is the third blog post
+date: 2022-06-25
 ---
 
-Second blog post!
+Third blog post!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed augue lacus viverra vitae congue. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Egestas quis ipsum suspendisse ultrices gravida dictum. Vulputate mi sit amet mauris commodo quis. Tortor at auctor urna nunc id cursus metus. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Sit amet luctus venenatis lectus magna fringilla urna. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Quam pellentesque nec nam aliquam sem et tortor consequat id. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Consequat interdum varius sit amet mattis. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Elementum eu facilisis sed odio morbi quis commodo.
 

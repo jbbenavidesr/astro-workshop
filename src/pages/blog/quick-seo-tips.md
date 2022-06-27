@@ -2,6 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: Quick SEO Tips
 description: Some quick tips of SEO
+date: 2022-06-12
 ---
 
 1. Make sure there is only one h1 element.
