@@ -10,13 +10,13 @@
         "format": "prettier -w ."
     },
     "devDependencies": {
-        "astro": "^1.0.0-beta.44",
+        "astro": "^1.0.0-beta.56",
         "postcss-nested": "^5.0.6",
-        "postcss-preset-env": "^7.7.1",
+        "postcss-preset-env": "^7.7.2",
         "postcss-short": "^5.0.0"
     },
     "dependencies": {
-        "prettier": "^2.7.0",
-        "prettier-plugin-astro": "^0.0.12"
+        "prettier": "^2.7.1",
+        "prettier-plugin-astro": "^0.1.1"
     }
 }
