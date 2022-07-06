@@ -1,6 +1,7 @@
 ---
 import Card from "../components/Card.astro";
 import Base from "../layouts/Base/Base.astro";
+import Counter from "../components/Counter.svelte";
 ---
 
 <Base title="Hello">
@@ -15,4 +16,5 @@ import Base from "../layouts/Base/Base.astro";
     <Card title="This is a card component">
         <p>It has a pretty border</p>
     </Card>
+    <Counter client:load />
 </Base>
